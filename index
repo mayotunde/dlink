@@ -17,7 +17,7 @@ mapLink = '<a href="http://openstreetmap.org">openstreetmap</a>,'+
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: ' &copy; ' + mapLink,maxZoom: 18}).addTo(map); 
 
-$.getJSON("", function(data){
+$.getJSON("https://rawgit.com/mayotunde/dlink/gh-pages/southeast.geojson", function(data){
  
 L.geoJson(data).addTo(map);
 }); 
